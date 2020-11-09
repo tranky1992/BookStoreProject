@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=BookStoreWebsite/C:\/Users\/trank\/.m2\/repository\/org\/hibernate\/hibernate-core\/5.2.12.Final\/hibernate-core-5.2.12.Final.jar&lt;org.hibernate.boot.model(IdGeneratorStrategyInterpreter$GeneratorNameDeterminationContext.class[GeneratorNameDeterminationContext" modifiers="1545" timestamp="1601102169916"/>
+<typeInfo handle="=BookStoreWebsite/src&lt;com.bookstore.controller{BaseServlet.java[BaseServlet" modifiers="1025" timestamp="1603885733465"/>
+<typeInfo handle="=BookStoreWebsite/src&lt;com.bookstore.dao{JpaDAO.java[JpaDAO" modifiers="1" timestamp="1603875491720"/>
+<typeInfo handle="=BookStoreWebsite/src&lt;com.bookstore.dao{GenericDAO.java[GenericDAO" modifiers="513" timestamp="1603264061717"/>
+</typeInfoHistroy>

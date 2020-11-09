@@ -1,0 +1,7 @@
+INDEX VERSION 1.130
+E:\BookStoreProject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4146415184.index
+\BookStoreWebsite\src
+E:\BookStoreProject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3555644095.index
+\BookStoreWebsite\src
+E:\BookStoreProject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2029521923.index
+\BookStoreWebsite\src

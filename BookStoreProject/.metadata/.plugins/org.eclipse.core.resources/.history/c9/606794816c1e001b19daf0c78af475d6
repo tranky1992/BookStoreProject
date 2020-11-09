@@ -1,0 +1,16 @@
+package com.bookstore.controller.frontend;
+
+import com.bookstore.controller.BaseServlet;
+import javax.servlet.annotation.WebServlet;
+
+
+@WebServlet("/search_book")
+public class SearchBookServlet extends BaseServlet {
+	private static final long serialVersionUID = 1L;
+
+ 
+    public SearchBookServlet() {
+       
+    }
+
+}
