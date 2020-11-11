@@ -1,11 +1,15 @@
 package com.bookstore.dao;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.persistence.EntityManager;
 
+import com.bookstore.entity.Category;
 import com.bookstore.entity.Customer;
+import com.bookstore.entity.Users;
 
 public class CustomerDAO extends JpaDAO<Customer> implements GenericDAO<Customer> {
 
@@ -24,7 +28,7 @@ public class CustomerDAO extends JpaDAO<Customer> implements GenericDAO<Customer
 	@Override
 	public Customer update(Customer customer) {
 		
-		return null;
+		return super.update(customer);
 	}
 
 	@Override
@@ -42,13 +46,32 @@ public class CustomerDAO extends JpaDAO<Customer> implements GenericDAO<Customer
 	@Override
 	public List<Customer> listAll() {
 		
-		return null;
+		return super.findWithNamedQuery("Customer.findAll");
 	}
 
 	@Override
 	public long count() {
 		
-		return 0;
+		return super.countWithNamedQuery("Customer.countAll");
 	}
 
+	public Customer findByEmail(String email) {
+		List<Customer> listCustomer = super.findWithNamedQuery("Customer.findByEmail", "email", email);
+		if(listCustomer != null && listCustomer.size() > 0) {
+			return listCustomer.get(0);
+		}
+	return null;
+	}
+	
+	public boolean checkLogin(String email, String password) {
+		Map<String, Object> parameters = new HashMap<>();
+		parameters.put("email", email);
+		parameters.put("password", password);
+		List<Customer> listCustomers = super.findWithNamedQuery("Customer.checkLogin", parameters);
+		if(listCustomers.size() == 1) {
+			return true;
+		}
+		return false;
+		
+	}
 }

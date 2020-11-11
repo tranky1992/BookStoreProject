@@ -74,7 +74,10 @@
 				},
 				fullname: "required",
 				password: "required",
-				password1: "required",
+				password1: {
+					required: true,
+					equalTo: "#password"
+				},
 			},
 			messages: {
 				email: {
@@ -83,7 +86,10 @@
 				},
 				fullname: "Mời bạn nhập họ tên!!",
 				password: "Mời bạn nhập mật khẩu!!",
-				password1: "Mời bạn nhập lại mật khẩu!!"
+				password1: {
+					required: "Mời bạn nhập lại mật khẩu!!",
+					equalTo: "Mật khẩu không đúng"
+				},
 			}
 		});
 		$("#buttonCancel").click(function(){
